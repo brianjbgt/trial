@@ -1,0 +1,176 @@
+html, body{
+   min-width:675px; /* suppose you want minimun width of 1000px */
+   width: auto !important;  /* Firefox will set width as auto */
+   width:675px; 
+}
+.herotype{
+  font: italic normal normal 36px "overwatch",impact,sans-serif;
+  font-size: 10px;
+  line-height: normal;
+  font-size: 3rem;
+  letter-spacing: .08rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #000000;
+  color:white;
+}
+
+.hero-overview{
+	margin-left: 200px;
+}
+
+.heroname, .herotype, .ability{
+	display:inline;
+
+}
+.herolabel, #details{
+	display:inline;
+	position: relative;
+}
+
+#details{
+	float:right;
+	margin-top: 10px;
+	margin-left:-20px;
+}
+
+.quote{
+  font: normal normal 36px "overwatch",impact,sans-serif;
+  font-size: 10px;
+  line-height: normal;
+  font-size: 3rem;
+  letter-spacing: .08rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #000000;
+  color:#ff9c00;
+  text-align:center;
+}
+
+
+.story{
+	text-align:center;
+}
+
+a:hover{
+	text-decoration:  none;
+}
+
+.heroname{
+	cursor: pointer; cursor: hand;
+}
+
+.herotype{
+	cursor: default;
+}
+
+.hero-header, .hero-container{
+	display:block;
+}
+
+.block{
+	display:block;
+	overflow:hidden;
+}
+
+.hero-container{
+	margin-bottom: 40px;
+	margin-top: 30px;
+	overflow:auto;
+}
+
+.img-container{
+	background-color: #ff9c00;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+  	filter: drop-shadow(5px 5px 5px #222); 
+	border:solid 2px;
+	float:left;	
+	display:block;
+	margin-left: 35px;
+}
+
+.img-container:hover{
+	background-color: rgba(35, 82, 124, 0.7);
+	cursor: pointer; 
+	cursor: hand;
+}
+
+.portrait{
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+  	filter: drop-shadow(5px 5px 5px #222); 
+	border-bottom-color:#ffe;
+	border-left-color:#eed;
+	border-right-color:#eed;
+	border-top-color:#ccb;
+	display:block;
+}
+
+.modal-header {
+	background: rgba(255,156,0,0.8);
+ 	color: #fefefe;
+}
+
+.modal-content{
+	border-bottom: 1px solid;
+	border-bottom-color: #ccc;
+	border-bottom-color: rgba(11,13,18, 0.95);
+	background-color: black;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.modal-title{
+	font: italic normal normal 60px "overwatch",impact,sans-serif;
+	line-height: normal;
+	font-size: 60px;
+	letter-spacing: .09rem;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 4px #000000;
+	color:#337ab7;
+}
+
+.herolabel{
+	font: normal normal 40px "overwatch",impact,sans-serif;
+	line-height: normal;
+	font-size: 40px;
+	letter-spacing: .09rem;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 4px #000000;
+	color: #fff;
+}
+
+.list-inline-item{
+	width:400px;
+	height: auto;
+	float: left;
+	overflow:hidden;
+	margin-top:10px;
+}
+
+.list-inline{
+	margin-left: 200px;
+	margin-right: 80px;
+	display: inline-block;
+	background-color: rgba(35, 82, 124, 0.8);
+	border-radius: 25px;
+}
+
+.abico{
+	height:80px;
+	width:90px;
+	float:left;
+	margin-top:10px;
+	margin-left:10px;
+	-webkit-filter: drop-shadow(8px 8px 8px #222);
+  	filter: drop-shadow(8px 8px 8px #222); 
+	border:solid 2px;
+	box-shadow: 5px 5px 5px #222;
+}
+
+.ab_desc{
+	font-size:16px;
+	margin-left: 125px;
+	overflow:hidden;
+}
+
+.ability{
+	font-size:30px;
+	margin-left:10px;
+}

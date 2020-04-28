@@ -1,0 +1,113 @@
+body {
+    background: url("images/675990.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-width:280px; /* suppose you want minimun width of 1000px */
+    width: auto !important;  /* Firefox will set width as auto */
+    width: 280px;
+}
+
+.panel{
+  border-bottom: 1px solid;
+  border-bottom-color: #ccc;
+  border-bottom-color: rgba(11,13,18, 0.95);
+  background-color: rgba(11,13,18, 0.8);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  transform: translate(0%, 0%);
+}
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+  background-color: #b26d01;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#exTab3 .nav-pills > li.active > a,
+#exTab3 .nav-pills > li > a:hover, 
+#exTab3 .nav-pills > li.active > a:focus {
+  background-color: #ff9c00;
+}
+
+
+#exTab3 .tab-content {
+  color : white;
+  background-color: rgba(11,13,18, 0.95);
+  padding : 5px 15px;
+}
+
+.mapico{
+  text-align: left;
+  float:left;
+  height:70px;
+  width:70px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222); 
+}
+
+.h2, h3, h2{
+  font: italic normal normal 10px "overwatch",impact,sans-serif;
+      font-size: 10px;
+      line-height: normal;
+  font-size: 4.8rem;
+  line-height: normal;
+  letter-spacing: .08rem;
+  text-transform: uppercase;
+  margin-left:20px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h3{
+  margin-left:30px;
+}
+
+p, .map-type-description{
+  line-height: normal;
+  font-size: 20px;
+  color:#ff9c00;
+  font-weight: 700;
+  margin-left:100px;
+  margin-right:50px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@media (max-width: 767px) {
+  #app-navbar-collapse{
+    position:absolute;
+    right: 20px;
+    background-color: rgb(11,13,18,0.95);
+  }
+}
+/*.notification{
+  animation:signup-response 2s 1;
+  -webkit-animation:signup-response 2s 1;
+  animation-fill-mode: forwards;
+
+  animation-delay:3s;
+  -webkit-animation-delay:1s; /* Safari and Chrome */
+  /*-webkit-animation-fill-mode: forwards;
+}*/
+
+/*@keyframes signup-response{
+    from {opacity :1;}
+    to {
+        opacity :0;
+        visibility:hidden;
+        height:10px;
+    }
+}
+
+@-webkit-keyframes signup-response{
+    from {opacity :1;}
+    to {
+        opacity :0;
+        visibility:hidden;
+        height:10px;
+    }
+}*/

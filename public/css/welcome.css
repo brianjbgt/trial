@@ -1,0 +1,177 @@
+html, body {
+    font-weight: 100;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "overwatch";
+    src: url("fonts/bignoodletoo.ttf") format("truetype");
+         url("fonts/bignoodletoo.woff") format("woff");
+}
+
+.navbar-default .navbar-nav > li > a{
+      color: #fefefe;
+      font-family: "overwatch", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      position: relative;
+      box-sizing: border-box;
+      line-height: 1.4;
+      color: #fff;
+      z-index: 1;
+}
+
+.navbar-right{
+  position:relative;
+  transform: translate(-30vm, 0%);
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  color:#ff9c00;
+}
+
+/*.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}*/
+
+.position-ref {
+    position: relative;
+}
+
+.content {
+    text-align: center;
+    position: relative;
+    transform: translate(0%, 30%);
+}
+
+.content img{
+    display: inline-block;
+    max-width: 100%;
+    max-height: 90%;
+    min-height: 200px;
+    min-width: 400px;
+    width: auto;
+    height: auto; 
+}
+
+.homeimg{
+  max-height: 40px;
+  max-width:200px;
+  transform: translate(0%, 20%);
+  position:absolute;
+}
+
+.homeimg:hover{
+  opacity: 0.6;
+}
+
+.btn{
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate(0%, 15%);
+    padding: 6px 1em;
+    border: none;
+    border-radius: 2px;
+    border: 3px solid transparent;
+        border-top-width: 3px;
+        border-right-width: 3px;
+        border-bottom-width: 3px;
+        border-left-width: 3px;
+    font-family: "overwatch",century gothic,arial,sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: .07em;
+    text-shadow: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    transition: all .2s;
+    background-color: #ff9c00;
+    color: #fefefe;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.navbar{
+  position: relative;
+  left: 0;
+  right: 0;
+  height: 50px;
+  transition: all .1s,background-color .3s;
+  z-index: 97;
+  background-color: rgb(11,13,18, 0.95);
+  border:none;
+}
+
+ /*-----video----*/
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    min-width: 800px;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('images/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+
+  .content {
+    display: none;
+  }
+
+  #app-navbar-collapse{
+    float: right;
+    background-color: rgb(11,13,18, 0.95);
+  }
+}
+
+@media (max-height: 767px) {
+  .content {
+    display: none;
+  }
+
+}
